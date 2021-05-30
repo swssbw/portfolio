@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-
 export const InfoContainer = styled.div`
   color: #e2e2e2;
-  background: ${({lightBg}) => ( lightBg ? '#f9f9f9' : '#0e0e0e ' )};
+  background: #0e0e0e;
 
   @media screen and (max-width: 768px) {
     padding: 30px 0;
@@ -57,7 +56,6 @@ export const Img = styled.img`
   width: 100%;
 `;
 
-
 export const TextWrapper = styled.div`
   max-width: 540px;
 
@@ -89,28 +87,26 @@ export const SubTitle = styled.p`
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
-  color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+  color: #e2e2e2;
 
   @media screen and (max-width: 480px) {
     font-size: 13px;
   }
 `;
 
-
-
 export const SkillsContainer = styled.div`
 color: #e2e2e2;
-background: ${({lightBg}) => ( lightBg ? '#f9f9f9' : '#0e0e0e ' )};
+background: #0e0e0e;
 
-@media screen and (max-width: 768px) {
-  padding: 30px 0;
-}
+  @media screen and (max-width: 768px) {
+    padding: 30px 0;
+  }
 `;
-
 
 export const SkillGroupTitle = styled.p`
   color: #ff9900;
   text-align: center;
+  font-size: 25px;
 `
 export const SkillItem = styled.p`
   font-size: 14px;

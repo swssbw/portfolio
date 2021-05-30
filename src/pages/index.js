@@ -3,7 +3,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data';
+import { aboutData } from '../components/InfoSection/Data';
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects';
 import Sidebar from '../components/Sidebar'
@@ -21,8 +21,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} /> 
       <HeroSection />
-      <InfoSection {...homeObjOne} /> 
-      {/* <InfoSection {...homeObjTwo} /> */}
+      <InfoSection {...aboutData} /> 
       <Projects></Projects>
       <Contact></Contact>
       <Footer />

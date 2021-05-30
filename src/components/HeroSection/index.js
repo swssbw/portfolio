@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Video from '../../videos/video.mp4'
 import {
   HeroContainer,
@@ -20,7 +20,6 @@ const HeroSection = () => {
     setHover(!hover)
   }
 
-
   return (
     <HeroContainer id="home">
       <HeroBg>
@@ -29,8 +28,8 @@ const HeroSection = () => {
       </HeroBg>
 
       <HeroContent>
-        <HeroP>안녕하세요</HeroP>
-        <HeroH1>프론트엔드개발자<br />김민지 입니다. </HeroH1>
+        <HeroP>안녕하세요!</HeroP>
+        <HeroH1>프론트엔드개발자<br/>김민지 입니다 </HeroH1>
         <HeroBtnWrapper>
           <Button 
             to="about" 
@@ -42,7 +41,7 @@ const HeroSection = () => {
             duration={500}
             spy={true}
             exact='true'
-            offset={-80}            >
+            offset={-80}>
             Click me! {hover ? <ArrowFoward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>

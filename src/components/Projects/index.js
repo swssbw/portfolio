@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import {
   ProjectsContainer,
@@ -14,8 +14,10 @@ import {
   ButtonWrap,
   StackWrap,
   StackNm
+} from './ProjectsElements';
 
-} from './ProjectsElements'
+import pr2 from '../../images/project2.gif';
+import pr3 from '../../images/project3.gif';
 
 const Projects = () => {
   return (
@@ -23,10 +25,11 @@ const Projects = () => {
       <ProjectsContainer id="projects">
         <ProjectsWrapper>
           <TopLine>PROJECTS</TopLine>
+
           <ProjectsItems>
             <ProjectsItem>
               <ProjectImgWrap>
-                <ProjectImg alt="프로젝트 썸네일"/>
+                <ProjectImg src={pr2} alt="프로젝트 썸네일"/>
               </ProjectImgWrap>
               <StackWrap>
                 <StackNm>react</StackNm>
@@ -36,16 +39,34 @@ const Projects = () => {
               <ProjectsTitle>프로젝트명</ProjectsTitle>
               <ProjectsDesc>프로젝트 설명</ProjectsDesc>
               <ButtonWrap>
+                <Button>DEMO</Button>
                 <Button>Github</Button>
+                <Button>Project</Button>
+              </ButtonWrap>
+            </ProjectsItem>
+
+            <ProjectsItem>
+              <ProjectImgWrap>
+                <ProjectImg src={pr2} alt="프로젝트 썸네일"/>
+              </ProjectImgWrap>
+              <StackWrap>
+                <StackNm>react</StackNm>
+                <StackNm>express</StackNm>
+                <StackNm>mongodb</StackNm>
+              </StackWrap>
+              <ProjectsTitle>프로젝트명</ProjectsTitle>
+              <ProjectsDesc>프로젝트 설명</ProjectsDesc>
+              <ButtonWrap>
+                <Button>DEMO</Button>
                 <Button>Github</Button>
-                <Button>Github</Button>
+                <Button>Project</Button>
               </ButtonWrap>
 
             </ProjectsItem>
 
             <ProjectsItem>
               <ProjectImgWrap>
-                <ProjectImg alt="프로젝트 썸네일"/>
+                <ProjectImg src={pr3} alt="프로젝트 썸네일"/>
               </ProjectImgWrap>
               <StackWrap>
                 <StackNm>react</StackNm>
@@ -55,28 +76,9 @@ const Projects = () => {
               <ProjectsTitle>프로젝트명</ProjectsTitle>
               <ProjectsDesc>프로젝트 설명</ProjectsDesc>
               <ButtonWrap>
+                <Button>DEMO</Button>
                 <Button>Github</Button>
-                <Button>Github</Button>
-                <Button>Github</Button>
-              </ButtonWrap>
-
-            </ProjectsItem>
-
-            <ProjectsItem>
-              <ProjectImgWrap>
-                <ProjectImg alt="프로젝트 썸네일"/>
-              </ProjectImgWrap>
-              <StackWrap>
-                <StackNm>react</StackNm>
-                <StackNm>express</StackNm>
-                <StackNm>mongodb</StackNm>
-              </StackWrap>
-              <ProjectsTitle>프로젝트명</ProjectsTitle>
-              <ProjectsDesc>프로젝트 설명</ProjectsDesc>
-              <ButtonWrap>
-                <Button>Github</Button>
-                <Button>Github</Button>
-                <Button>Github</Button>
+                <Button>Project</Button>
               </ButtonWrap>
 
             </ProjectsItem>

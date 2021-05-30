@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
+import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Link } from 'react-scroll';
 
 export const HeroContainer = styled.div`
@@ -23,7 +23,6 @@ export const HeroContainer = styled.div`
     z-index: 2;
   }
 `;
-
 
 export const HeroBg = styled.div`
   position: absolute;
@@ -92,11 +91,10 @@ export const HeroBtnWrapper = styled.div`
   align-items: center;
 `;
 
-
 export const Button = styled(Link)`
   border-radius: 50px;
   background: rgba(0,0,0,0.4);
-  color: #fff;
+  color: #ff9900;
   white-space: nowrap;
   outline: none;
   border: 2px solid #ff9900;
@@ -111,7 +109,7 @@ export const Button = styled(Link)`
   &:hover {
     transition: all 0.5s ease-in-out;
     background: rgba(255, 153, 0, 0.5);
-    
+    color: #fff;
   }
 `;
 

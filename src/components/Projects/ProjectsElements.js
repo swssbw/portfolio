@@ -17,6 +17,7 @@ export const ProjectsWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 100px 0;
+  color: #e2e2e2 ;
 `;
 
 export const TopLine = styled.p`
@@ -27,11 +28,12 @@ export const TopLine = styled.p`
   text-transform: uppercase;
   padding: 16px;
   text-align: center;
+  
 `;
 
 
 export const ProjectsItems = styled.div`
-
+  color: #e2e2e2;
   display: grid;
   max-width: 1000px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -51,52 +53,66 @@ export const ProjectsItems = styled.div`
 `
 
 export const ProjectsItem = styled.div`
-  border: 1px solid white;
-  width: 100%;
+  border: 1px solid #1b1b1b;
+  border-radius: 10px;
+  width: 95%;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 10px 0;
-`
-
-export const ProjectsTitle = styled.p`
-  color: white;
-`
-
-export const ProjectsDesc = styled.p`
-  color: white;
-`
-
-export const Button = styled.a`
-  cursor: pointer;
-  padding: 5px 10px;
-  border: 1px solid red;
-  margin: 5px;
+  color: #e2e2e2 ;
+  padding: 10px;
 `
 
 export const ProjectImgWrap = styled.div`
-  border: 1px solid blue;
-  width: 250px;
-  height: 250px;
+  border: 1px solid #1b1b1b ;
+  width: 280px;
+  height: 320px;
   margin: 10px 0;
 `
 
 export const ProjectImg = styled.img`
   width: 100%;
+  height: 100%;
 `
+
+export const StackWrap = styled.div`
+  display: flex;
+  margin-bottom: 5px;
+`
+
+export const StackNm = styled.p`
+  border: 1px solid #1b1b1b   ;
+  background: #ffb364 ;
+  margin: 2px;
+  padding: 2px 4px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: black ;
+  font-weight: 400;
+`
+
+export const ProjectsTitle = styled.p`
+  font-size: 18px;
+  font-weight: 700;
+`
+
+export const ProjectsDesc = styled.p`
+  font-size: 16px;
+`
+
+export const Button = styled.a`
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #1b1b1b;
+  margin: 5px;
+  width: 70px;
+  text-align: center;
+`
+
+
 
 export const ButtonWrap = styled.div`
   display: flex;
 `
 
-export const StackWrap = styled.div`
-  display: flex;
-`
-
-export const StackNm = styled.p`
-  border: 1px solid pink;
-  margin: 2px;
-  padding: 2px 5px;
-  border-radius: 10px;
-
-`

@@ -3,9 +3,8 @@ import styled from 'styled-components';
 export const FooterContainer = styled.footer `
   background-color: #1b1b1b ;
 `
-
 export const FooterWrap = styled.div `
-  padding: 60px 24px;
+  padding: 40px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,15 +32,6 @@ export const WebsiteRights = styled.small`
   margin: 10px 0;
 `
 
-export const SocialIcons = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100px;
-`
-export const SocialIconLink = styled.a`
-  color: #fff;
-  font-size: 24px;
-`
 export const FooterEnd = styled.p`
   color: #fff;
   font-size: 12px;

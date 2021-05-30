@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {FaTimes} from 'react-icons/fa';
-import {Link as LinkS} from "react-scroll";
+import { FaTimes } from 'react-icons/fa';
+import { Link as LinkS } from "react-scroll";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -30,7 +30,6 @@ export const Icon = styled.div`
   cursor: pointer;
   outline: none;
 `;
-
 
 export const SidebarWrapper = styled.div`
   color: #fff;

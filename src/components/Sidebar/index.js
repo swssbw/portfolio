@@ -33,7 +33,6 @@ const Sidebar = ({ isOpen, toggle }) => {
             spy={true}
             exact='true'
             onClick={toggle}>About</SidebarLink>
-
           <SidebarLink 
             to="projects"
             smooth={true}
