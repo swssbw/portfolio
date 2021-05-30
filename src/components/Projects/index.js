@@ -17,7 +17,7 @@ import {
 } from './ProjectsElements';
 
 import pr2 from '../../images/project2.gif';
-import pr3 from '../../images/project3.gif';
+import pr3 from '../../images/project3.jpg';
 
 const Projects = () => {
   return (
