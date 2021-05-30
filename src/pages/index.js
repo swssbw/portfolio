@@ -3,11 +3,11 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
+import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data';
 import Navbar from '../components/Navbar'
-import Services from '../components/Services';
+import Projects from '../components/Projects';
 import Sidebar from '../components/Sidebar'
-import Skills from '../components/Skills';
+
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,8 @@ const Home = () => {
       <Navbar toggle={toggle} /> 
       <HeroSection />
       <InfoSection {...homeObjOne} /> 
-      <InfoSection {...homeObjTwo} />
+      {/* <InfoSection {...homeObjTwo} /> */}
+      <Projects></Projects>
       <Contact></Contact>
       <Footer />
     </>

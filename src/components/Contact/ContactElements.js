@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 
-
 export const ContactContainer = styled.div `
   width: 100%;
   background: #0e0e0e;
@@ -19,16 +18,6 @@ export const ContactWrapper = styled.div`
 `
 
 export const ContactTitle  = styled.p`
-  /* margin: 100px 0 50px 0;
-  font-size: 16px;
-  color: #ff9900;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  padding: 0 15px; */
-
   color: #ff9900;
   font-size: 36px;
   font-weight: 700;
@@ -41,7 +30,7 @@ export const ContactTitle  = styled.p`
 export const ContactItemWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
-  margin: 40px 0;
+  padding: 50px 0;
   flex-wrap: wrap;
   width: 100%;
 

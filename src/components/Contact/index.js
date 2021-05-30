@@ -12,7 +12,13 @@ const Contact = () => {
   const [Visible, setVisible] = useState(false);
 
   const onClickHandler = () => {
+    const t = document.createElement("textarea");
+    document.body.appendChild(t);
+    const text = "swij1004@naver.com";
+    t.value = text;
+    t.select();
     document.execCommand("copy");
+    document.body.removeChild(t);
     setVisible(true);
   }
   
