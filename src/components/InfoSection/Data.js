@@ -1,0 +1,53 @@
+export const homeObjOne = {
+  id: 'about',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'ABOUT ME',
+  headline: '끊임없이 궁금해하고 습득하는 과정에서 즐거움을 느끼며, 어제보다 더 나은 개발자가 되겠습니다.',
+  description1: '2019.02 인천대학교 전자공학과 졸업(학사)',
+  description2: '2020.02-2020.12 델테크놀로지스(technical support, 사원)',
+  description3: '2021.02-2021.06 웹개발자 과정 수료',
+  buttonLabel: 'Get Started',
+  imgStart: false,
+  img: require('../../images/profile.png').default,
+  alt: 'profile',
+  dark: true,
+  primary: true,
+  darkText: false,
+}
+
+
+export const homeObjTwo = {
+  id: 'projects',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'PROJECTS',
+  headline: 'Unlimited Transactions with zero fees',
+  description: '1번 설명 어쩌구 저쩌구 어쩌구저쩌구',
+  buttonLabel: 'Get Started',
+  imgStart: false,
+  // img: require('../../images/profile.png').default,
+  alt: '프로젝트',
+  dark: true,
+  primary: true,
+  darkText: false,
+}
+
+export const homeObjThree = {
+  id: 'skills',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'SKILLS',
+  headline: 'Unlimited Transactions with zero fees',
+  description: '1번 설명 어쩌구 저쩌구 어쩌구저쩌구',
+  buttonLabel: 'Get Started',
+  imgStart: false,
+  img: require('../../images/svg-3.svg').default,
+  alt: 'car',
+  dark: true,
+  primary: true,
+  darkText: false,
+}
