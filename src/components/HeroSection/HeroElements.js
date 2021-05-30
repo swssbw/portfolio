@@ -43,6 +43,8 @@ export const VideoBg = styled.video`
   background: #232a34;
 `;
 
+
+
 export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
