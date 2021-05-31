@@ -1,16 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react'
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
+import HeroSection from './components/MainSection';
+import InfoSection from './components/InfoSection';
+import Projects from './components/Projects';
+import { aboutData } from './components/InfoSection/Data';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/index';
-
-
+ 
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
-    <Router>
-      <Switch>
-        <Route path="/" component={Home} exact />
-      </Switch>
-    </Router>
+    <>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} /> 
+      <HeroSection />
+      <InfoSection {...aboutData} /> 
+      <Projects></Projects>
+      <Contact></Contact>
+      <Footer />
+    </>
   );
 }
 

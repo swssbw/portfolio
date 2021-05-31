@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
   color: #e2e2e2;
-  background: ${({lightBg}) => ( lightBg ? '#f9f9f9' : '#0e0e0e ' )};
+  background: #1b1b1b;
 
   @media screen and (max-width: 768px) {
     padding: 30px 0;
@@ -14,10 +14,8 @@ export const ProjectsWrapper = styled.div`
   min-height: 800px;
   width: 100%;
   max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding: 100px 0;
-  color: #e2e2e2 ;
 `;
 
 export const TopLine = styled.p`
@@ -28,12 +26,9 @@ export const TopLine = styled.p`
   text-transform: uppercase;
   padding: 16px;
   text-align: center;
-  
 `;
 
-
 export const ProjectsItems = styled.div`
-  color: #e2e2e2;
   display: grid;
   max-width: 1000px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -41,7 +36,6 @@ export const ProjectsItems = styled.div`
   margin: 0 auto;
   place-items: center;
   
-
   @media screen and (max-width: 1000px){
     grid-template-columns: 1fr 1fr
   }
@@ -53,7 +47,7 @@ export const ProjectsItems = styled.div`
 `
 
 export const ProjectsItem = styled.div`
-  border: 1px solid #1b1b1b;
+  border: 1px solid #0e0e0e;
   border-radius: 10px;
   width: 95%;
   display: flex;
@@ -65,7 +59,7 @@ export const ProjectsItem = styled.div`
 `
 
 export const ProjectImgWrap = styled.div`
-  border: 1px solid #1b1b1b ;
+  border: 1px solid #0e0e0e;
   width: 280px;
   height: 320px;
   margin: 10px 0;
@@ -79,10 +73,11 @@ export const ProjectImg = styled.img`
 export const StackWrap = styled.div`
   display: flex;
   margin-bottom: 5px;
+  flex-wrap: wrap;
 `
 
 export const StackNm = styled.p`
-  border: 1px solid #1b1b1b   ;
+  border: 1px solid #0e0e0e;
   background: #ffb364 ;
   margin: 2px;
   padding: 2px 4px;
@@ -101,18 +96,19 @@ export const ProjectsDesc = styled.p`
   font-size: 16px;
 `
 
-export const Button = styled.a`
-  cursor: pointer;
-  padding: 5px 10px;
-  border: 1px solid #1b1b1b;
-  margin: 5px;
-  width: 70px;
-  text-align: center;
-`
-
-
-
 export const ButtonWrap = styled.div`
   display: flex;
 `
+
+export const Button = styled.a`
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #0e0e0e;
+  margin: 5px;
+  width: 75px;
+  text-align: center;
+  border-radius: 5px;
+`
+
+
 

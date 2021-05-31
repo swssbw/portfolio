@@ -3,7 +3,6 @@ import {
   InfoContainer,
   InfoWrapper,
   InfoRow,
-  Column,
   TextWrapper,
   TopLine,
   Heading,
@@ -30,21 +29,15 @@ const InfoSection = ({
         <InfoWrapper>
           <TopLine>{topLine}</TopLine>
           <InfoRow>
-
-            <Column>
               <ImgWrap>
                 <Img src={img} alt={alt}/>
               </ImgWrap>
-            </Column>
 
-            <Column>
               <TextWrapper>
                 <Name>{name} <small> {ename}</small></Name>
                 <Heading>끊임없이 궁금해하고 습득하는 과정에서 즐거움을 느끼며,<br/> 어제보다 더 나은 개발자가 되겠습니다.</Heading>
                 <SubTitle>{description3}<br/>{description2}<br/>{description1}</SubTitle>
               </TextWrapper>
-            </Column>
-
           </InfoRow>
 
           <SkillsContainer>

@@ -53,13 +53,11 @@ export const SidebarLink = styled(LinkS)`
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
-  transition: 0.2s ease-in-out;
   color: #fff;
   cursor: pointer;
 
   &:hover {
     color: #ff9900;
     transition: 0.4s ease-in-out;
-    font-weight: bold;
   }
 `;

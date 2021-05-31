@@ -17,7 +17,7 @@ import {
 } from './ProjectsElements';
 
 import pr2 from '../../images/project2.gif';
-import pr3 from '../../images/project3.jpg';
+import pr3 from '../../images/project3.webp';
 
 const Projects = () => {
   return (
@@ -35,6 +35,7 @@ const Projects = () => {
                 <StackNm>react</StackNm>
                 <StackNm>express</StackNm>
                 <StackNm>mongodb</StackNm>
+                <StackNm>scss</StackNm>
               </StackWrap>
               <ProjectsTitle>프로젝트명</ProjectsTitle>
               <ProjectsDesc>프로젝트 설명</ProjectsDesc>

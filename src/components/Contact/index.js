@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FaBlog, FaGithub } from 'react-icons/fa';
+import { HiOutlineMail } from "react-icons/hi";
 import { 
   ContactContainer, 
   ContactWrapper,
@@ -6,12 +8,10 @@ import {
   ContactItemWrapper,
   ContactItem,
   ContantItemDesc,
-  BlogIcon,
-  MailIcon, 
-  GithubIcon
+  IconWrap,
 } from './ContactElements';
 import Rodal from 'rodal';
-import '../../rodal.css';
+import 'rodal/lib/rodal.css';
 
 const Contact = () => {
   
@@ -39,18 +39,21 @@ const Contact = () => {
           <ContactTitle>Contact Me!</ContactTitle>
           <ContactItemWrapper>
             <ContactItem onClick={onClickHandler} >
-              <MailIcon />Email 
+              <IconWrap><HiOutlineMail/></IconWrap>
+                Email 
               <ContantItemDesc>swij1004@naver.com</ContantItemDesc>
             </ContactItem>
             <Rodal visible={Visible} onClose={hide} width={300} height={200} animation="zoom" duration="500">
-                메일 주소 복사 완료!
-              </Rodal>
+                <p style={{textAlign:'center', padding:'50px'}}>메일 주소 복사 완료!</p>
+            </Rodal>
             <ContactItem href="https://swssbw.tistory.com/" target="_blank">
-              <BlogIcon/>Blog 
+              <IconWrap><FaBlog/></IconWrap>
+                Blog
               <ContantItemDesc href="https://swssbw.tistory.com/" target="_blank">swssbw.tistory.com</ContantItemDesc>
             </ContactItem>
             <ContactItem href="https://github.com/swssbw" target="_blank">
-              <GithubIcon/>Github 
+              <IconWrap><FaGithub/></IconWrap>
+                Github 
               <ContantItemDesc href="https://github.com/swssbw" target="_blank">github.com/swssbw</ContantItemDesc>
             </ContactItem>
           </ContactItemWrapper>

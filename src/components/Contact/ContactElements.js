@@ -1,34 +1,22 @@
 import styled from 'styled-components';
-import { FaBlog, FaGithub } from 'react-icons/fa';
-import { HiOutlineMail } from "react-icons/hi";
 
+export const IconWrap = styled.div`
+  color: #ffab00;
+  font-size: 35px;
+`
 
-export const MailIcon = styled(HiOutlineMail)`
-  color: #ffab00;
-  font-size: 35px;
-`
-export const BlogIcon = styled(FaBlog)`
-  color: #ffab00;
-  font-size: 35px;
-`
-export const GithubIcon = styled(FaGithub)`
-  color: #ffab00;
-  font-size: 35px;
-`
 export const ContactContainer = styled.div `
-  width: 100%;
-  background: #0e0e0e;
-  min-height: 600px;
+  background: #1b1b1b;
+  min-height: 700px;
   padding-top: 80px;
-`;
+`
 
 export const ContactWrapper = styled.div`
-  margin: 0 auto;
-  display: flex;
   max-width: 1000px;
-  flex-direction: column;
+  margin: 0 auto;
   padding: 0 24px;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
 `
 export const ContactTitle  = styled.p`
   color: #ff9900;
@@ -46,7 +34,7 @@ export const ContactItemWrapper = styled.div`
   flex-wrap: wrap;
   width: 100%;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `
@@ -59,16 +47,7 @@ export const ContactItem = styled.a`
   text-decoration: none;
   cursor: pointer;
 
-
   @media screen and (max-width: 768px) {
-    font-size: 16px;
-  }
-
-  @media screen and (max-width: 550px) {
-    margin: 20px 0;
-  }
-
-  @media screen and (max-width: 480px) {
     margin: 20px 0;
   }
 `
@@ -80,11 +59,10 @@ export const ContantItemDesc = styled.a`
   text-decoration: none;
 
   @media screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   @media screen and (max-width: 480px) {
     display: none;
   }
-  
 `

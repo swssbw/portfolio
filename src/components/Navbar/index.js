@@ -69,7 +69,6 @@ const Navbar = ({ toggle }) => {
               >CONTACT</NavLinks>
             </NavItem>
           </NavMenu>
-
         </NavbarContainer>
       </Nav>
 

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Link } from 'react-scroll';
 
-export const HeroContainer = styled.div`
-  background: #0c0c0c;
+export const MainContainer = styled.div`
+  background: #0e0e0e ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,9 +11,21 @@ export const HeroContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
+  color: #e2e2e2;
+
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 2;
+  }
 `;
 
-export const HeroBg = styled.div`
+export const BgWrapper = styled.div`
   position: absolute;
   top: 0;
   right: 0;
@@ -24,17 +36,12 @@ export const HeroBg = styled.div`
   overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
+export const Bg = styled.img`
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #232a34;
 `;
 
-
-
-export const HeroContent = styled.div`
+export const MainContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
@@ -44,10 +51,11 @@ export const HeroContent = styled.div`
   align-items: center;
 `;
 
-export const HeroH1 = styled.h1`
+export const MainHeading = styled.h1`
   color: #fff;
   font-size: 36px;
   text-align: center;
+  margin-bottom: 32px;
 
   @media screen and (max-width: 768px) {
     font-size: 32px;
@@ -58,9 +66,8 @@ export const HeroH1 = styled.h1`
   }
 `;
 
-export const HeroP = styled.p `
+export const MainP = styled.p `
   margin-top: 24px;
-  color: #fff;
   font-size: 24px;
   text-align: center;
   max-width: 600px;
@@ -72,14 +79,6 @@ export const HeroP = styled.p `
   @media screen and (max-width: 480px) {
     font-size: 18px;
   }
-`;
-
-
-export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 export const Button = styled(Link)`
