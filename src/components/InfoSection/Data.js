@@ -10,7 +10,7 @@ export const aboutData = {
   html: require('../../images/skills/html.png').default,
   css: require('../../images/skills/css.png').default,
   jquery: require('../../images/skills/jquery.webp').default,
-  js: require('../../images/skills/js2.png').default,
+  js: require('../../images/skills/js.png').default,
   node: require('../../images/skills/node.png').default,
   react: require('../../images/skills/react.png').default,
   sass: require('../../images/skills/sass.webp').default,
