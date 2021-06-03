@@ -1,6 +1,5 @@
 ## 📍 Project OverView 📍
 
-# Project Overview
 
 ✨ [보러가기](http://minji.xyz) ✨
 
