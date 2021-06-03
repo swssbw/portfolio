@@ -75,7 +75,7 @@ const Projects = () => {
                 <StackNm>mongodb</StackNm>
               </StackWrap>
               <ProjectsTitle>포트폴리오 페이지</ProjectsTitle>
-              <ProjectsDesc>지금 현재 보고계신 포트폴리오용 페이지를 제작하였습니다.</ProjectsDesc>
+              <ProjectsDesc>지금 보고 계신 포트폴리오용 페이지를 제작하였습니다.</ProjectsDesc>
               <ButtonWrap>
                 <Button href="https://minji.xyz/" target="_blank">DEMO</Button>
                 <Button href="https://github.com/swssbw/portfolio" target="_blank">Github</Button>
