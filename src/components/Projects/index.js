@@ -55,12 +55,12 @@ const Projects = () => {
                 <StackNm>express</StackNm>
                 <StackNm>mongodb</StackNm>
               </StackWrap>
-              <ProjectsTitle>프로젝트명</ProjectsTitle>
-              <ProjectsDesc>프로젝트 설명</ProjectsDesc>
+              <ProjectsTitle>분리수거 검색기</ProjectsTitle>
+              <ProjectsDesc>사용자가 품목을 검색하면 구분 & 배출방법을 안내해줍니다.</ProjectsDesc>
               <ButtonWrap>
-                <Button>DEMO</Button>
-                <Button>Github</Button>
-                <Button>Project</Button>
+                <Button href="https://wasteproject.herokuapp.com/" target="_blank">DEMO</Button>
+                <Button href="https://github.com/swssbw/wasteProject" target="_blank">Github</Button>
+                <Button href="https://www.notion.so/81331f1458cd412393f4cbe4c8cdc9df" target="_blank">Project</Button>
               </ButtonWrap>
 
             </ProjectsItem>
@@ -74,12 +74,12 @@ const Projects = () => {
                 <StackNm>express</StackNm>
                 <StackNm>mongodb</StackNm>
               </StackWrap>
-              <ProjectsTitle>프로젝트명</ProjectsTitle>
-              <ProjectsDesc>프로젝트 설명</ProjectsDesc>
+              <ProjectsTitle>포트폴리오 페이지</ProjectsTitle>
+              <ProjectsDesc>지금 보고 계신 포트폴리오용 페이지를 제작하였습니다.</ProjectsDesc>
               <ButtonWrap>
-                <Button>DEMO</Button>
-                <Button>Github</Button>
-                <Button>Project</Button>
+                <Button href="https://minji.xyz/" target="_blank">DEMO</Button>
+                <Button href="https://github.com/swssbw/portfolio" target="_blank">Github</Button>
+                <Button href="https://www.notion.so/ed971de0c9ca4d2ebe9b48c83f25089f" target="_blank">Project</Button>
               </ButtonWrap>
 
             </ProjectsItem>

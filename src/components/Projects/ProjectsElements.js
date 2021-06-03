@@ -47,15 +47,16 @@ export const ProjectsItems = styled.div`
 `
 
 export const ProjectsItem = styled.div`
-  border: 1px solid #0e0e0e;
+  border: 1px solid #2e2e2e;
   border-radius: 10px;
-  width: 95%;
+  width: 310px;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 10px 0;
   color: #e2e2e2 ;
   padding: 10px;
+  height: 520px;
 `
 
 export const ProjectImgWrap = styled.div`
@@ -77,13 +78,13 @@ export const StackWrap = styled.div`
 `
 
 export const StackNm = styled.p`
-  border: 1px solid #0e0e0e;
-  background: #ffb364 ;
+  border: 1px solid #d3d3d345;
+  background: #d3d3d345 ;
   margin: 2px;
   padding: 2px 4px;
-  border-radius: 10px;
+  border-radius: 6px;
   font-size: 12px;
-  color: black ;
+  color: #d3d3d3 ;
   font-weight: 400;
 `
 
@@ -93,21 +94,34 @@ export const ProjectsTitle = styled.p`
 `
 
 export const ProjectsDesc = styled.p`
-  font-size: 16px;
+  font-size: 14px;
+  text-align: center;
+  margin: 2px 0;
 `
 
 export const ButtonWrap = styled.div`
   display: flex;
+  margin-top: 5px;
 `
 
 export const Button = styled.a`
+  text-decoration: none;
+  color: #ff9900;
   cursor: pointer;
   padding: 5px 10px;
-  border: 1px solid #0e0e0e;
+  border: 1px solid rgba(255, 153, 0, 0.3);
   margin: 5px;
   width: 75px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 3px;
+  background: rgba(255, 153, 0, 0.4);
+    color: #fff;
+
+  :hover {
+    transition: all 0.1s ease-in-out;
+    background: rgba(255, 153, 0, 0.8);
+    color: #fff;
+  }
 `
 
 
