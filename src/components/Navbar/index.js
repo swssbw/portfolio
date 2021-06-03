@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 import { 
@@ -8,9 +8,10 @@ import {
   NavMenu, 
   NavItem, 
   NavLinks,
+  ToggleBtn,
 } from './NavbarElements';
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, btntitle, handletoggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changNav = () => {
@@ -67,6 +68,9 @@ const Navbar = ({ toggle }) => {
               exact='true'
               offset={-80}
               >CONTACT</NavLinks>
+            </NavItem>
+            <NavItem>
+              <ToggleBtn onClick={handletoggle}>{btntitle}</ToggleBtn>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
   color: #e2e2e2;
+  color: ${(props) => props.theme.text};
   background: #1b1b1b ;
+  background: ${(props) => props.theme.bg};
 
   @media screen and (max-width: 768px) {
     padding: 30px 0;
@@ -20,6 +22,7 @@ export const InfoWrapper = styled.div`
 
 export const TopLine = styled.p`
   color: #ff9900;
+  color: ${(props) => props.theme.highlight};
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -118,6 +121,7 @@ export const SkillsItems = styled.div`
 
 export const SkillGroupTitle = styled.p`
   color: #ff9900;
+  color: ${(props) => props.theme.highlight};
   text-align: center;
   font-weight: 700;
   font-size: 30px;

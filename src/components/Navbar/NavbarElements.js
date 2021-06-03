@@ -3,6 +3,7 @@ import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav `
   background: ${({scrollNav}) => (scrollNav ? '#101010' : 'transparent') };
+  // background: ${({scrollNav}) => (scrollNav ? '#101010' : 'transparent') };
   height: 80px;
   margin-top: -80px; 
   display: flex;
@@ -70,4 +71,14 @@ export const NavLinks = styled(LinkS) `
     border-bottom: 3px solid #ff9900;
     color: #ff9900;
   }
+`
+
+export const ToggleBtn = styled.div`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 `

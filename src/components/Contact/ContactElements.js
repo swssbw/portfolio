@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 export const IconWrap = styled.div`
   color: #ffab00;
+  color: ${(props) => props.theme.highlight};
   font-size: 35px;
 `
 
 export const ContactContainer = styled.div `
-  background: #1b1b1b;
+  /* background: #1b1b1b; */
+  background-color: ${(props) => props.theme.bg};
   min-height: 700px;
   padding-top: 80px;
 `
@@ -20,6 +22,7 @@ export const ContactWrapper = styled.div`
 `
 export const ContactTitle  = styled.p`
   color: #ff9900;
+  color: ${(props) => props.theme.highlight};
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -40,6 +43,7 @@ export const ContactItemWrapper = styled.div`
 `
 export const ContactItem = styled.a`
   color:#fff;
+  color: ${(props) => props.theme.text};
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -54,6 +58,7 @@ export const ContactItem = styled.a`
 
 export const ContantItemDesc = styled.p`
   color: #e2e2e2;
+  color: ${(props) => props.theme.text};
   font-size: 16px;
   cursor: pointer;
   text-decoration: none;
