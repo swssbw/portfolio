@@ -8,7 +8,8 @@ import InfoSection from './components/InfoSection';
 import Projects from './components/Projects';
 import { aboutData } from './components/InfoSection/Data';
 import './App.css';
- 
+
+
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
