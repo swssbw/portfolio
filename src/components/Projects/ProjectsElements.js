@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  color: #e2e2e2;
-  background: #1b1b1b;
+  color: ${(props) => props.theme.text};
+  background: ${(props) => props.theme.bg};
 
   @media screen and (max-width: 768px) {
     padding: 30px 0;
@@ -19,13 +19,14 @@ export const ProjectsWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #ff9900;
+  color: ${(props) => props.theme.emphasizetext};
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   padding: 16px;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 `;
 
 export const ProjectsItems = styled.div`
@@ -47,20 +48,19 @@ export const ProjectsItems = styled.div`
 `
 
 export const ProjectsItem = styled.div`
-  border: 1px solid #2e2e2e;
-  border-radius: 10px;
+  border: ${(props) => props.theme.border};
+  border-radius: 5px;
   width: 310px;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 10px 0;
-  color: #e2e2e2 ;
+  color: ${(props) => props.theme.text};
   padding: 10px;
   height: 520px;
 `
 
 export const ProjectImgWrap = styled.div`
-  border: 1px solid #0e0e0e;
   width: 280px;
   height: 320px;
   margin: 10px 0;
@@ -78,25 +78,28 @@ export const StackWrap = styled.div`
 `
 
 export const StackNm = styled.p`
-  border: 1px solid #d3d3d345;
-  background: #d3d3d345 ;
+  border: 1px solid rgba(135,131,120,0.2);
+  background: rgba(135,131,120,0.15) ;
   margin: 2px;
   padding: 2px 4px;
   border-radius: 6px;
   font-size: 12px;
-  color: #d3d3d3 ;
+  color: #EB5757 ;
   font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 `
 
 export const ProjectsTitle = styled.p`
   font-size: 18px;
   font-weight: 700;
+  color: ${(props) => props.theme.emphasizetext};
 `
 
 export const ProjectsDesc = styled.p`
   font-size: 14px;
   text-align: center;
   margin: 2px 0;
+  color: ${(props) => props.theme.desctext};
 `
 
 export const ButtonWrap = styled.div`
@@ -106,21 +109,24 @@ export const ButtonWrap = styled.div`
 
 export const Button = styled.a`
   text-decoration: none;
-  color: #ff9900;
+  color: ${(props) => props.theme.highlight};
   cursor: pointer;
   padding: 5px 10px;
-  border: 1px solid rgba(255, 153, 0, 0.3);
+  border: 1px solid ${(props) => props.theme.emphasizetext};
   margin: 5px;
   width: 75px;
   text-align: center;
-  border-radius: 3px;
-  background: rgba(255, 153, 0, 0.4);
-    color: #fff;
+  border-radius: 2px;
+  color: ${(props) => props.theme.text};
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 
   :hover {
-    transition: all 0.1s ease-in-out;
-    background: rgba(255, 153, 0, 0.8);
-    color: #fff;
+    transition: all 0.2s ease-in-out;
+    border: ${(props) => props.theme.border};
+    color: ${(props) => props.theme.emphasizetext};
+    background: rgba(135,131,120,0.9);
   }
 `
 

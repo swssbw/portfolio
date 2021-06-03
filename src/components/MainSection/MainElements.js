@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 
 export const MainContainer = styled.div`
   background: #0e0e0e ;
+  color: #e2e2e2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +12,6 @@ export const MainContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-  color: #e2e2e2;
 
   :before {
     content: "";
@@ -21,6 +21,7 @@ export const MainContainer = styled.div`
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,0.8);
+    background: ${(props) => props.theme.bggradient};
     z-index: 2;
   }
 `;
@@ -83,11 +84,11 @@ export const MainP = styled.p `
 
 export const Button = styled(Link)`
   border-radius: 50px;
-  background: rgba(0,0,0,0.4);
-  color: #ff9900;
+  background: #EB5757;
+  color: #fff;
   white-space: nowrap;
   outline: none;
-  border: 2px solid #ff9900;
+  border: 2px solid #EB5757;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -95,10 +96,12 @@ export const Button = styled(Link)`
   transition: all 0.2s ease-in-out;
   padding: 12px 30px;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 
   &:hover {
-    transition: all 0.5s ease-in-out;
-    background: rgba(255, 153, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    background: #b53e3e;
+    border: 2px solid #b53e3e;
     color: #fff;
   }
 `;

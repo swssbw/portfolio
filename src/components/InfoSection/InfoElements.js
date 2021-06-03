@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 
 export const InfoContainer = styled.div`
-  color: #e2e2e2;
   color: ${(props) => props.theme.text};
-  background: #1b1b1b ;
   background: ${(props) => props.theme.bg};
 
   @media screen and (max-width: 768px) {
@@ -21,14 +19,14 @@ export const InfoWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #ff9900;
-  color: ${(props) => props.theme.highlight};
+  color: #EB5757;
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   padding: 16px;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 `;
 
 export const InfoRow = styled.div`
@@ -58,7 +56,6 @@ export const TextWrapper = styled.div`
 
 export const Name = styled.p`
   font-size: 28px;
-  font-weight: 400;
 
   @media screen and (max-width: 768px) {
     font-size: 25px;
@@ -86,9 +83,8 @@ export const Heading = styled.p`
 `;
 
 export const SubTitle = styled.p`
-  max-width: 440px;
+  max-width: 450px;
   font-size: 16px;
-  font-weight: 300;
   margin-bottom: 35px;
 
   @media screen and (max-width: 768px) {
@@ -103,7 +99,7 @@ export const SubTitle = styled.p`
 export const SkillsContainer = styled.div`
   width: 800px;
   margin: 0 auto;
-
+  
   @media screen and (max-width: 768px) {
     width: 500px;
   }
@@ -120,12 +116,12 @@ export const SkillsItems = styled.div`
 `
 
 export const SkillGroupTitle = styled.p`
-  color: #ff9900;
-  color: ${(props) => props.theme.highlight};
+  color: #EB5757;
   text-align: center;
   font-weight: 700;
   font-size: 30px;
   margin: 20px 0;
+  font-family: 'Montserrat', sans-serif;
 `
 
 export const SkillIconWrap = styled.div`
@@ -138,3 +134,8 @@ export const SkillIcon = styled.img`
   width: 100%;
 `
 
+export const EName = styled.span`
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-style: italic;
+`

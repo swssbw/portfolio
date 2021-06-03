@@ -36,7 +36,7 @@ const Contact = () => {
     <>
       <ContactContainer id="contact">
         <ContactWrapper>
-          <ContactTitle>Contact Me!</ContactTitle>
+          <ContactTitle>CONTACT</ContactTitle>
           <ContactItemWrapper>
             <ContactItem onClick={onClickHandler} >
               <IconWrap><HiOutlineMail/></IconWrap>

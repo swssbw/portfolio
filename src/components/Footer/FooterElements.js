@@ -6,6 +6,7 @@ export const FooterContainer = styled.footer `
   font-size: 14px;
   font-weight: 300;
   text-align: center;
+  
 `
 export const FooterWrap = styled.div `
   padding: 40px 24px;
@@ -17,13 +18,17 @@ export const FooterWrap = styled.div `
 `
 
 export const FooterTitle = styled.p`
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 `
 
 export const WebsiteRights = styled.p`
   margin: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 `
 
 export const FooterEnd = styled.p`
   font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
 `

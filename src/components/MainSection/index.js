@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import bg from '../../images/bg.jpg';
+import bg from '../../images/bg3.jpg';
+
 
 import {
   ArrowFoward,
@@ -13,7 +14,7 @@ import {
   MainP
 } from './MainElements'
 
-const MainSection = () => {
+const MainSection = (props) => {
   const [hover, setHover] = useState(false);
   
   const onHover = () => {

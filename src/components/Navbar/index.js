@@ -9,6 +9,9 @@ import {
   NavItem, 
   NavLinks,
   ToggleBtn,
+  NavLogo,
+  Inner,
+  Container
 } from './NavbarElements';
 
 const Navbar = ({ toggle, btntitle, handletoggle }) => {
@@ -34,6 +37,10 @@ const Navbar = ({ toggle, btntitle, handletoggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
+          <NavLogo>
+            로고
+          </NavLogo>
+          
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -69,10 +76,13 @@ const Navbar = ({ toggle, btntitle, handletoggle }) => {
               offset={-80}
               >CONTACT</NavLinks>
             </NavItem>
-            <NavItem>
-              <ToggleBtn onClick={handletoggle}>{btntitle}</ToggleBtn>
-            </NavItem>
           </NavMenu>
+
+        <Container>
+          <ToggleBtn id="checkbox" type="checkbox" onClick={handletoggle} />
+          <Inner htmlFor="checkbox" />
+        </Container>
+
         </NavbarContainer>
       </Nav>
 

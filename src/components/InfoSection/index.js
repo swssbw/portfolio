@@ -14,7 +14,8 @@ import {
   SkillGroupTitle, 
   SkillIconWrap, 
   SkillIcon,
-  SkillsItems
+  SkillsItems,
+  EName
 } from './InfoElements'
 
 const InfoSection = ({
@@ -34,7 +35,7 @@ const InfoSection = ({
               </ImgWrap>
 
               <TextWrapper>
-                <Name>{name} <small> {ename}</small></Name>
+                <Name>{name} <EName> {ename}</EName></Name>
                 <Heading>끊임없이 궁금해하고 습득하는 과정에서 즐거움을 느끼며,<br/> 어제보다 더 나은 개발자가 되겠습니다.</Heading>
                 <SubTitle>{description3}<br/>{description2}<br/>{description1}</SubTitle>
               </TextWrapper>

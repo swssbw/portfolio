@@ -17,7 +17,7 @@ import {
 } from './ProjectsElements';
 
 import pr2 from '../../images/project2.gif';
-import pr3 from '../../images/project3.webp';
+import pr3 from '../../images/project3.jpg';
 
 const Projects = () => {
   return (
@@ -29,7 +29,7 @@ const Projects = () => {
           <ProjectsItems>
             <ProjectsItem>
               <ProjectImgWrap>
-                <ProjectImg src={pr2} alt="프로젝트 썸네일"/>
+                {/* <ProjectImg src={pr2} alt="프로젝트 썸네일"/> */}
               </ProjectImgWrap>
               <StackWrap>
                 <StackNm>react</StackNm>
@@ -51,9 +51,10 @@ const Projects = () => {
                 <ProjectImg src={pr2} alt="프로젝트 썸네일"/>
               </ProjectImgWrap>
               <StackWrap>
-                <StackNm>react</StackNm>
-                <StackNm>express</StackNm>
-                <StackNm>mongodb</StackNm>
+                <StackNm>React</StackNm>
+                <StackNm>Express</StackNm>
+                <StackNm>Mongodb</StackNm>
+                <StackNm>Scss</StackNm>
               </StackWrap>
               <ProjectsTitle>분리수거 검색기</ProjectsTitle>
               <ProjectsDesc>사용자가 품목을 검색하면 구분 & 배출방법을 안내해줍니다.</ProjectsDesc>
@@ -70,9 +71,9 @@ const Projects = () => {
                 <ProjectImg src={pr3} alt="프로젝트 썸네일"/>
               </ProjectImgWrap>
               <StackWrap>
-                <StackNm>react</StackNm>
-                <StackNm>express</StackNm>
-                <StackNm>mongodb</StackNm>
+                <StackNm>JavaScript</StackNm>
+                <StackNm>React</StackNm>
+                <StackNm>Styled-component</StackNm>
               </StackWrap>
               <ProjectsTitle>포트폴리오 페이지</ProjectsTitle>
               <ProjectsDesc>지금 보고 계신 포트폴리오용 페이지를 제작하였습니다.</ProjectsDesc>

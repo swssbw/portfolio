@@ -35,7 +35,7 @@ function App() {
         <ThemeProvider theme={theme === 'dark' ? darkmode : lightmode }>
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Navbar toggle={toggle} btntitle={btntitle} handletoggle={handletoggle} /> 
-          <MainSection />
+          <MainSection theme={theme}/>
           <InfoSection {...aboutData} /> 
           <Projects />
           <Contact />
