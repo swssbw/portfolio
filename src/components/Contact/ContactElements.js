@@ -52,7 +52,7 @@ export const ContactItem = styled.a`
   }
 `
 
-export const ContantItemDesc = styled.a`
+export const ContantItemDesc = styled.p`
   color: #e2e2e2;
   font-size: 16px;
   cursor: pointer;

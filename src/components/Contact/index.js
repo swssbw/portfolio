@@ -43,7 +43,7 @@ const Contact = () => {
                 Email 
               <ContantItemDesc>swij1004@naver.com</ContantItemDesc>
             </ContactItem>
-            <Rodal visible={Visible} onClose={hide} width={300} height={200} animation="zoom" duration="500">
+            <Rodal visible={Visible} onClose={hide} width={300} height={200} animation="zoom" duration={500}>
                 <p style={{textAlign:'center', padding:'50px'}}>메일 주소 복사 완료!</p>
             </Rodal>
             <ContactItem href="https://swssbw.tistory.com/" target="_blank">
