@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { Link } from 'react-scroll';
+import { flexjCenter, image } from '../globalStyle';
 
 export const MainContainer = styled.div`
   background: #0e0e0e ;
-  color: #e2e2e2;
-  display: flex;
-  justify-content: center;
+  color: #fff;
+  ${flexjCenter}
   align-items: center;
   padding: 0 30px;
   height: 100vh;
@@ -20,7 +20,6 @@ export const MainContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.8);
     background: ${(props) => props.theme.bggradient};
     z-index: 2;
   }
@@ -54,7 +53,7 @@ export const MainContent = styled.div`
 
 export const MainHeading = styled.h1`
   color: #fff;
-  font-size: 36px;
+  font-size: var(--font-xl);
   text-align: center;
   margin-bottom: 32px;
 
@@ -69,33 +68,32 @@ export const MainHeading = styled.h1`
 
 export const MainP = styled.p `
   margin-top: 24px;
-  font-size: 24px;
+  font-size: var(--font-ml);
   text-align: center;
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
-    font-size: 22px;
+    font-size: var(--font-m);
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: var(--font-s);
   }
 `;
 
 export const Button = styled(Link)`
   border-radius: 50px;
-  background: #EB5757;
+  background: var(--highlight--color);
   color: #fff;
   white-space: nowrap;
   outline: none;
   border: 2px solid #EB5757;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
+  ${flexjCenter}
   align-items: center;
   transition: all 0.2s ease-in-out;
   padding: 12px 30px;
-  font-weight: bold;
+  font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 
   &:hover {

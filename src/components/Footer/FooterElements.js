@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+import {sectionWrapper, flexjCenter} from '../globalStyle';
 
 export const FooterContainer = styled.footer `
   background-color: ${(props) => props.theme.footerbg};
@@ -9,26 +10,26 @@ export const FooterContainer = styled.footer `
   
 `
 export const FooterWrap = styled.div `
-  padding: 40px 24px;
-  display: flex;
+  ${flexjCenter}
+  ${sectionWrapper}
   flex-direction: column;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 40px 24px;
 `
 
-export const FooterTitle = styled.p`
+const footerline = styled.p`
   font-family: 'Montserrat', sans-serif;
+  margin: 5px 0;
+`
+
+export const FooterTitle = styled(footerline)`
   font-weight: 700;
 `
 
-export const WebsiteRights = styled.p`
-  margin: 10px 0;
-  font-family: 'Montserrat', sans-serif;
+export const WebsiteRights = styled(footerline)`
   font-weight: 400;
 `
 
-export const FooterEnd = styled.p`
+export const FooterEnd = styled(footerline)`
   font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
 `
+

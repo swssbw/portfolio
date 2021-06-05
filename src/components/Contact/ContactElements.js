@@ -1,44 +1,38 @@
 import styled from 'styled-components';
+import { sectionTitle, sectionWrapper, sectionContainer, flexjCenter } from '../globalStyle';
 
 export const IconWrap = styled.div`
-  color: #EB5757;
+  color: var(--highlight--color);
   font-size: 35px;
 `
 
 export const ContactContainer = styled.div `
-  background-color: ${(props) => props.theme.bg};
-  min-height: 700px;
-  padding-top: 80px;
+  ${sectionContainer}
 `
 
 export const ContactWrapper = styled.div`
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 24px;
-  display: flex;
+  ${sectionWrapper}
+  ${flexjCenter}
+  padding: 100px 24px;
   flex-direction: column;
 `
+
 export const ContactTitle  = styled.p`
+  ${sectionTitle}
   color: ${(props) => props.theme.emphasizetext};
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  padding: 16px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
 `
+
 export const ContactItemWrapper = styled.div`
-  display: flex;
+  ${flexjCenter}
   justify-content: space-evenly;
-  padding: 50px 0;
-  flex-wrap: wrap;
   width: 100%;
+  padding: 50px 0;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `
+
 export const ContactItem = styled.a`
   color: ${(props) => props.theme.emphasizetext};
   display: flex;

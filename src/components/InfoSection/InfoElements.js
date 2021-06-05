@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-
-
+import { sectionTitle,sectionWrapper,sectionContainer,image,flexjCenter } from '../globalStyle';
+ 
 export const InfoContainer = styled.div`
-  color: ${(props) => props.theme.text};
-  background: ${(props) => props.theme.bg};
+  ${sectionContainer}
 
   @media screen and (max-width: 768px) {
     padding: 30px 0;
@@ -11,27 +10,16 @@ export const InfoContainer = styled.div`
 `;
 
 export const InfoWrapper = styled.div`
+  ${sectionWrapper}
   z-index: 1;
-  min-height: 800px;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 100px 0;
 `;
 
 export const TopLine = styled.p`
-  color: #EB5757;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  padding: 16px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  ${sectionTitle}
 `;
 
 export const InfoRow = styled.div`
-  display: flex;
-  justify-content: center;
+  ${flexjCenter}
   padding: 24px;
 
   @media screen and (max-width: 768px){
@@ -47,7 +35,7 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100%;
+  ${image}
 `;
 
 export const TextWrapper = styled.div`
@@ -55,29 +43,29 @@ export const TextWrapper = styled.div`
 `;
 
 export const Name = styled.p`
-  font-size: 28px;
+  color: ${(props) => props.theme.emphasizetext};
+  font-size: var(--font-l);
 
   @media screen and (max-width: 768px) {
-    font-size: 25px;
+    font-size: var(--font-ml);
   }
-
+  
   @media screen and (max-width: 480px) {
-    font-size: 22px;
+    font-size: var(--font-m);
   }
 `;
 
 export const Heading = styled.p`
+  font-size: var(--font-m);
   margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 400;
-
+  
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: var(--font-s);
     margin-bottom: 15px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 16px;
+    font-size: var(--font-xs);
     margin-bottom: 10px;
   }
 `;
@@ -110,18 +98,12 @@ export const SkillsContainer = styled.div`
 `;
 
 export const SkillsItems = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  ${flexjCenter}
 `
 
 export const SkillGroupTitle = styled.p`
-  color: #EB5757;
-  text-align: center;
-  font-weight: 700;
+  ${sectionTitle}
   font-size: 30px;
-  margin: 20px 0;
-  font-family: 'Montserrat', sans-serif;
 `
 
 export const SkillIconWrap = styled.div`
@@ -131,11 +113,11 @@ export const SkillIconWrap = styled.div`
 `
 
 export const SkillIcon = styled.img`
-  width: 100%;
+  ${image}
 `
 
 export const EName = styled.span`
   font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
+  font-size: var(--font-m);
   font-style: italic;
 `

@@ -10,7 +10,7 @@ import { aboutData } from './components/InfoSection/Data';
 import './App.css';
 import { ThemeProvider } from 'styled-components';
 import { darkmode, lightmode } from './components/theme';
-
+import { GlobalStyle } from './components/globalStyle';
 
 function App() {
   
@@ -21,7 +21,6 @@ function App() {
     theme === 'dark' ? setTheme('light') : setTheme('dark');
   }
   
-  const btntitle = theme === 'dark' ? '라이트모드로' : '다크모드로';
   
   // side bar
   const [isOpen, setIsOpen] = useState(false);
@@ -33,8 +32,9 @@ function App() {
   return (
     <>
         <ThemeProvider theme={theme === 'dark' ? darkmode : lightmode }>
+          <GlobalStyle theme={theme}/>
           <Sidebar isOpen={isOpen} toggle={toggle} />
-          <Navbar toggle={toggle} btntitle={btntitle} handletoggle={handletoggle} /> 
+          <Navbar toggle={toggle} handletoggle={handletoggle} /> 
           <MainSection theme={theme}/>
           <InfoSection {...aboutData} /> 
           <Projects />

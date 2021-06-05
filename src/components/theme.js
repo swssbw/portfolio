@@ -19,5 +19,5 @@ export const lightmode = {
     emphasizetext: '#000',
     desctext: '#7b7b7b',
     buttonbg: '#fff',
-}
+};
 

@@ -14,7 +14,7 @@ import {
   Container
 } from './NavbarElements';
 
-const Navbar = ({ toggle, btntitle, handletoggle }) => {
+const Navbar = ({ toggle, handletoggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changNav = () => {

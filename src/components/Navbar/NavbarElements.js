@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
+import {flexjCenter} from '../globalStyle';
 
 export const Nav = styled.nav `
   background: ${({scrollNav}) => (scrollNav ? '#101010' : 'transparent') };
   height: 80px;
   margin-top: -80px; 
-  display: flex;
-  justify-content: center;
+  ${flexjCenter}
   align-items: center;
   font-size: 1rem;
   position: sticky;

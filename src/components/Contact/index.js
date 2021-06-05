@@ -20,8 +20,7 @@ const Contact = () => {
   const onClickHandler = () => {
     const t = document.createElement("textarea");
     document.body.appendChild(t);
-    const text = "swij1004@naver.com";
-    t.value = text;
+    t.value = "swij1004@naver.com";
     t.select();
     document.execCommand("copy");
     document.body.removeChild(t);
