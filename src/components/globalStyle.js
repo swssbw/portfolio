@@ -1,6 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components';
 
-
 export const GlobalStyle = createGlobalStyle`
 
   body {
@@ -10,14 +9,12 @@ export const GlobalStyle = createGlobalStyle`
 
   }
 
-
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Spoqa Han Sans Neo", "sans-serif";
   }
-
 
   :root {
     --highlight--color : #EB5757;
@@ -30,7 +27,6 @@ export const GlobalStyle = createGlobalStyle`
     --font-xxs: 14px;
   }
 `
-
 
 export const sectionTitle = css`
   color: var(--highlight--color);
