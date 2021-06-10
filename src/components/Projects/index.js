@@ -45,10 +45,16 @@ const Projects = () => {
               </ProjectsDesc>
               <ButtonWrap>
                 <Button>DEMO</Button>
-                <Button href="https://github.com/swssbw/minishop">
+                <Button
+                  href="https://github.com/swssbw/minishop"
+                  target="_blank"
+                >
                   Github
                 </Button>
-                <Button href="https://www.notion.so/Mini-shop-2082fd2aed52464dbb5161cd50196775">
+                <Button
+                  href="https://www.notion.so/Mini-shop-2082fd2aed52464dbb5161cd50196775"
+                  target="_blank"
+                >
                   Project
                 </Button>
               </ButtonWrap>
