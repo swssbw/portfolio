@@ -44,7 +44,7 @@ const Projects = () => {
                 Redux와 Redux-thunk를 활용한 미니 쇼핑몰 프로젝트 입니다. &nbsp;{" "}
               </ProjectsDesc>
               <ButtonWrap>
-                <Button>DEMO</Button>
+                {/* <Button>DEMO</Button> 배포 준비중 */}
                 <Button
                   href="https://github.com/swssbw/minishop"
                   target="_blank"
